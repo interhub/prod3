@@ -4,6 +4,6 @@ app.get("/", (req, res) => {
     res.sendFile(process.cwd() + "/index.html")
     console.log("opened page")
 })
-app.listen(process.env.port || 3003, () => {
+app.listen(process.env.PORT || 3003, () => {
     console.log("server start")
 })
